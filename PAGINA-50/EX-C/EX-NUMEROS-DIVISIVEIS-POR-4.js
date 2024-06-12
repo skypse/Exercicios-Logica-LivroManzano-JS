@@ -4,13 +4,10 @@ instrução se, perguntando se o número é divisível; sendo, mostre-o; não se
 próximo passo. A variável que controlará o contador deve ser iniciada com o valor 1. */
 
 let numero = 1;
-let soma = 0;
 
-while (numero <= 500) {
-    if (numero % 2 === 0) {
-        soma += numero;
+do {
+    if (numero % 4 === 0) {
+        console.log(numero);
     }
     numero++;
-}
-
-console.log("A soma dos números pares é: " + soma);
+} while (numero < 200);
