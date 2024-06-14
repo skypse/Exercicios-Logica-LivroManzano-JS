@@ -9,8 +9,11 @@ resultado = 1;
 base = parseInt(prompt("Digite o valor da base: "));
 expoente = parseInt(prompt("Digite o valor do expoente: "));
 
-for (let i = 1; i <= expoente; i++) {
+let i = 1;
+while (i <= expoente) {
     resultado *= base;
+    i++;
 }
 
 console.log("O resultado de", base, "elevado a", expoente, "é:", resultado);
+
