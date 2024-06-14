@@ -3,8 +3,10 @@ considerado que qualquer número elevado a zero é 1, e elevado a 1 é ele próp
 neste exercício não pode ser utilizado o operador de exponenciação do portuguol (^). */
 
 let potencia = 1;
+let expoente = 0;
 
-for (let expoente = 0; expoente <= 15; expoente++) {
+while (expoente <= 15) {
     console.log("3 elevado a", expoente, "é", potencia);
     potencia *= 3;
+    expoente++;
 }
